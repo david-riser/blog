@@ -1,14 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T14:07:28-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David Riser’s Website</title><subtitle>My website is my place to share interesting code snippets and small projects.  I am interested in data science, machine learning, physics, and computing.</subtitle><author><name>David Riser</name></author><entry><title type="html">Bananas</title><link href="http://localhost:4000/2019/07/01/bananas.html" rel="alternate" type="text/html" title="Bananas" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/bananas</id><content type="html" xml:base="http://localhost:4000/2019/07/01/bananas.html">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T14:40:21-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David Riser’s Website</title><subtitle>My website is my place to share interesting code snippets and small projects.  I am interested in data science, machine learning, physics, and computing.</subtitle><author><name>David Riser</name></author><entry><title type="html">How To Include Mathjax In Jekyll Pages</title><link href="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html" rel="alternate" type="text/html" title="How To Include Mathjax In Jekyll Pages" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages</id><content type="html" xml:base="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html">&lt;p&gt;In the welcome post, you’ll notice that I used latex-like math symbols.  Those are powered by MathJax, and here is how I made it work.&lt;/p&gt;
 
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</summary></entry><entry><title type="html">Apples</title><link href="http://localhost:4000/2019/06/28/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2019-06-28T00:00:00-04:00</published><updated>2019-06-28T00:00:00-04:00</updated><id>http://localhost:4000/2019/06/28/apples</id><content type="html" xml:base="http://localhost:4000/2019/06/28/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
+&lt;h3 id=&quot;create-an-include-file&quot;&gt;Create an Include File&lt;/h3&gt;
+&lt;p&gt;Create a new file in your _includes folder called math.html with the following contents:&lt;/p&gt;
 
-&lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
-the genus Malus. The tree originated in Central Asia, where its wild ancestor,
-Malus sieversii, is still found today. Apples have been grown for thousands of
-years in Asia and Europe, and were brought to North America by European
-colonists.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">An apple is a sweet, edible fruit produced by an apple tree.</summary></entry></feed>
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/x-mathjax-config&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;MathJax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Hub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;extensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;MathMenu.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;MathZoom.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;AssistiveMML.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a11y/accessibility-menu.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;jax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;input/TeX&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;output/CommonHTML&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;TeX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;extensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;AMSmath.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;AMSsymbols.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;noErrors.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;noUndefined.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;this part is based on the following &lt;a href=&quot;https://quuxplusone.github.io/blog/2018/08/05/mathjax-in-jekyll&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;inject-this-into-your-layout&quot;&gt;Inject This Into Your Layout&lt;/h3&gt;
+&lt;p&gt;In your _layouts folder, you can include this in the default header as shown below.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;main&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page-content&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-label=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrapper&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;footer&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In the block above, I replaced the liquid command “{“ symbol with a “&amp;lt;” symbol so that the text would render properly, you’ll need to change those back to liquid tags in order for everything to work.&lt;/p&gt;
+
+&lt;h3 id=&quot;test-your-mathjax&quot;&gt;Test Your MathJax&lt;/h3&gt;
+&lt;p&gt;You should now be able to include equations using the simple latex-like syntax.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\ln&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Which renders as:
+&lt;script type=&quot;math/tex&quot;&gt;f(x) = \frac{x^2}{\ln(x)}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Very nice!  You can also use full latex environments like align and gather. The following gather block produces a nice output.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;gather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+x &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; y &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; k &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;gather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{gather}
+x = 5 &amp; y = 7 \\
+z = 3 &amp; k = -1
+\end{gather} %]]&gt;&lt;/script&gt;</content><author><name>David</name></author><summary type="html">In the welcome post, you’ll notice that I used latex-like math symbols. Those are powered by MathJax, and here is how I made it work.</summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2019/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2019/07/01/welcome.html">&lt;p&gt;Welcome to my website/blog thing.  This is a test post, where you can see me struggling to figure out how this entire thing works!&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;boring_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I want to put some math into this!&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x) = \frac{1}{x}&lt;/script&gt;</content><author><name>David</name></author><summary type="html">Welcome to my website/blog thing. This is a test post, where you can see me struggling to figure out how this entire thing works!</summary></entry></feed>

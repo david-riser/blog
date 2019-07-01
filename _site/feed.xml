@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T14:40:21-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David Riser’s Website</title><subtitle>My website is my place to share interesting code snippets and small projects.  I am interested in data science, machine learning, physics, and computing.</subtitle><author><name>David Riser</name></author><entry><title type="html">How To Include Mathjax In Jekyll Pages</title><link href="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html" rel="alternate" type="text/html" title="How To Include Mathjax In Jekyll Pages" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages</id><content type="html" xml:base="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html">&lt;p&gt;In the welcome post, you’ll notice that I used latex-like math symbols.  Those are powered by MathJax, and here is how I made it work.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T15:18:03-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David Riser’s Website</title><subtitle>My website is my place to share interesting code snippets and small projects.  I am interested in data science, machine learning, physics, and computing.</subtitle><author><name>David Riser</name></author><entry><title type="html">How To Include Mathjax In Jekyll Pages</title><link href="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html" rel="alternate" type="text/html" title="How To Include Mathjax In Jekyll Pages" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages</id><content type="html" xml:base="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html">&lt;p&gt;In many scientific and computing blog posts, it is useful to be able to insert forumlas.  Most scientists use a typesetting language called latex to format equations, and it is quite easy to add support for latex to Jekyll using MathJax.&lt;/p&gt;
+
+&lt;p&gt;Using MathJax, you can write simple equation blocks:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\ln&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;which render as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x) = \frac{x^2}{\ln(x)}&lt;/script&gt;
+
+&lt;p&gt;as well as more complex latex structure such as:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;gather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+x &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; y &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; k &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;gather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;which also render nicely.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{gather}
+x = 5, &amp; y = 7 \\
+z = 3, &amp; k = -1
+\end{gather} %]]&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;In order to achieve this, we will:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add the required mathjax to your _includes directory&lt;/li&gt;
+  &lt;li&gt;Make sure those lines are included in your layout by adding them to the default layout header
+That is it!&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;create-an-include-file&quot;&gt;Create an Include File&lt;/h3&gt;
 &lt;p&gt;Create a new file in your _includes folder called math.html with the following contents:&lt;/p&gt;
@@ -56,27 +89,7 @@
 &lt;p&gt;In the block above, I replaced the liquid command “{“ symbol with a “&amp;lt;” symbol so that the text would render properly, you’ll need to change those back to liquid tags in order for everything to work.&lt;/p&gt;
 
 &lt;h3 id=&quot;test-your-mathjax&quot;&gt;Test Your MathJax&lt;/h3&gt;
-&lt;p&gt;You should now be able to include equations using the simple latex-like syntax.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\ln&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Which renders as:
-&lt;script type=&quot;math/tex&quot;&gt;f(x) = \frac{x^2}{\ln(x)}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Very nice!  You can also use full latex environments like align and gather. The following gather block produces a nice output.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;gather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
-x &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; y &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
-z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; k &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;gather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{gather}
-x = 5 &amp; y = 7 \\
-z = 3 &amp; k = -1
-\end{gather} %]]&gt;&lt;/script&gt;</content><author><name>David</name></author><summary type="html">In the welcome post, you’ll notice that I used latex-like math symbols. Those are powered by MathJax, and here is how I made it work.</summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2019/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2019/07/01/welcome.html">&lt;p&gt;Welcome to my website/blog thing.  This is a test post, where you can see me struggling to figure out how this entire thing works!&lt;/p&gt;
+&lt;p&gt;You should now be able to include equations using the simple latex-like syntax shown in the introduction.&lt;/p&gt;</content><author><name>David</name></author><summary type="html">In many scientific and computing blog posts, it is useful to be able to insert forumlas. Most scientists use a typesetting language called latex to format equations, and it is quite easy to add support for latex to Jekyll using MathJax.</summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2019/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2019-07-01T00:00:00-04:00</published><updated>2019-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2019/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2019/07/01/welcome.html">&lt;p&gt;Welcome to my website/blog thing.  This is a test post, where you can see me struggling to figure out how this entire thing works!&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;boring_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;

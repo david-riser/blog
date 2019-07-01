@@ -8,15 +8,15 @@
 <meta property="og:title" content="How To Include Mathjax In Jekyll Pages" />
 <meta name="author" content="David" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="In the welcome post, you’ll notice that I used latex-like math symbols. Those are powered by MathJax, and here is how I made it work." />
-<meta property="og:description" content="In the welcome post, you’ll notice that I used latex-like math symbols. Those are powered by MathJax, and here is how I made it work." />
+<meta name="description" content="In many scientific and computing blog posts, it is useful to be able to insert forumlas. Most scientists use a typesetting language called latex to format equations, and it is quite easy to add support for latex to Jekyll using MathJax." />
+<meta property="og:description" content="In many scientific and computing blog posts, it is useful to be able to insert forumlas. Most scientists use a typesetting language called latex to format equations, and it is quite easy to add support for latex to Jekyll using MathJax." />
 <link rel="canonical" href="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html" />
 <meta property="og:url" content="http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html" />
 <meta property="og:site_name" content="David Riser’s Website" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-07-01T00:00:00-04:00" />
 <script type="application/ld+json">
-{"description":"In the welcome post, you’ll notice that I used latex-like math symbols. Those are powered by MathJax, and here is how I made it work.","author":{"@type":"Person","name":"David"},"@type":"BlogPosting","url":"http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html","headline":"How To Include Mathjax In Jekyll Pages","dateModified":"2019-07-01T00:00:00-04:00","datePublished":"2019-07-01T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html"},"@context":"https://schema.org"}</script>
+{"description":"In many scientific and computing blog posts, it is useful to be able to insert forumlas. Most scientists use a typesetting language called latex to format equations, and it is quite easy to add support for latex to Jekyll using MathJax.","author":{"@type":"Person","name":"David"},"@type":"BlogPosting","url":"http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html","headline":"How To Include Mathjax In Jekyll Pages","dateModified":"2019-07-01T00:00:00-04:00","datePublished":"2019-07-01T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="David Riser's Website" /></head>
 <script type="text/x-mathjax-config">
@@ -69,7 +69,40 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In the welcome post, you’ll notice that I used latex-like math symbols.  Those are powered by MathJax, and here is how I made it work.</p>
+    <p>In many scientific and computing blog posts, it is useful to be able to insert forumlas.  Most scientists use a typesetting language called latex to format equations, and it is quite easy to add support for latex to Jekyll using MathJax.</p>
+
+<p>Using MathJax, you can write simple equation blocks:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="p">$$</span><span class="nb"> f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\frac</span><span class="p">{</span><span class="nb">x</span><span class="p">^</span><span class="m">2</span><span class="p">}{</span><span class="nv">\ln</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="p">}</span><span class="nb"> </span><span class="p">$$</span></code></pre></figure>
+
+<p>which render as,</p>
+
+<script type="math/tex; mode=display">f(x) = \frac{x^2}{\ln(x)}</script>
+
+<p>as well as more complex latex structure such as:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="p">$$</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">gather</span><span class="p">}</span><span class="nb">
+x </span><span class="o">=</span><span class="nb"> </span><span class="m">5</span><span class="nb">, </span><span class="p">&amp;</span><span class="nb"> y </span><span class="o">=</span><span class="nb"> </span><span class="m">7</span><span class="nb"> </span><span class="nv">\\</span><span class="nb">
+z </span><span class="o">=</span><span class="nb"> </span><span class="m">3</span><span class="nb">, </span><span class="p">&amp;</span><span class="nb"> k </span><span class="o">=</span><span class="nb"> </span><span class="o">-</span><span class="m">1</span><span class="nb">
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">gather</span><span class="p">}</span><span class="nb">
+</span><span class="p">$$</span></code></pre></figure>
+
+<p>which also render nicely.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{gather}
+x = 5, & y = 7 \\
+z = 3, & k = -1
+\end{gather} %]]></script>
+
+<h3 id="overview">Overview</h3>
+<p>In order to achieve this, we will:</p>
+<ul>
+  <li>Add the required mathjax to your _includes directory</li>
+  <li>Make sure those lines are included in your layout by adding them to the default layout header
+That is it!</li>
+</ul>
 
 <h3 id="create-an-include-file">Create an Include File</h3>
 <p>Create a new file in your _includes folder called math.html with the following contents:</p>
@@ -127,27 +160,7 @@
 <p>In the block above, I replaced the liquid command “{“ symbol with a “&lt;” symbol so that the text would render properly, you’ll need to change those back to liquid tags in order for everything to work.</p>
 
 <h3 id="test-your-mathjax">Test Your MathJax</h3>
-<p>You should now be able to include equations using the simple latex-like syntax.</p>
-
-<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="p">$$</span><span class="nb"> f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\frac</span><span class="p">{</span><span class="nb">x</span><span class="p">^</span><span class="m">2</span><span class="p">}{</span><span class="nv">\ln</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="p">}</span><span class="nb"> </span><span class="p">$$</span></code></pre></figure>
-
-<p>Which renders as:
-<script type="math/tex">f(x) = \frac{x^2}{\ln(x)}</script></p>
-
-<p>Very nice!  You can also use full latex environments like align and gather. The following gather block produces a nice output.</p>
-
-<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="p">$$</span><span class="nb">
-</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">gather</span><span class="p">}</span><span class="nb">
-x </span><span class="o">=</span><span class="nb"> </span><span class="m">5</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> y </span><span class="o">=</span><span class="nb"> </span><span class="m">7</span><span class="nb"> </span><span class="nv">\\</span><span class="nb">
-z </span><span class="o">=</span><span class="nb"> </span><span class="m">3</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> k </span><span class="o">=</span><span class="nb"> </span><span class="o">-</span><span class="m">1</span><span class="nb">
-</span><span class="nv">\end</span><span class="p">{</span><span class="nb">gather</span><span class="p">}</span><span class="nb">
-</span><span class="p">$$</span></code></pre></figure>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{gather}
-x = 5 & y = 7 \\
-z = 3 & k = -1
-\end{gather} %]]></script>
+<p>You should now be able to include equations using the simple latex-like syntax shown in the introduction.</p>
 
   </div><a class="u-url" href="/2019/07/01/how-to-include-mathjax-in-jekyll-pages.html" hidden></a>
 </article>
